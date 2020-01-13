@@ -51,8 +51,12 @@ You can clean up of any unused dependencies
 ```
 sudo apt-get autoremove
 ```
-* Remouve firefoxsudo
+* Remove firefoxsudo
 ```
 apt-get purge firefox
+```
+* Remove 
+```
+sudo apt-get purge thunderbird*
 ```
 
