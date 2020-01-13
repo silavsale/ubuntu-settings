@@ -2,8 +2,11 @@
 ---
 ## My notes about Ubuntu settings and applications installation.
 
-* install **GNOME tweaks** from Ubuntu Software center.
-
+* install **GNOME tweaks** from Ubuntu Software center or
+from terminal. 
+```
+sudo apt-get install gnome-tweak-tool
+```
 * install **Coogle Chrome** from cli 
 1. download  
 
@@ -16,6 +19,10 @@
 * Check for Update and Upgrade
 ``` sudo apt update
 sudo apt upgrade
-sudo apt dist-upgrade ```
+sudo apt dist-upgrade 
+```
 
-*
+* Install Latest Graphics Drivers
+Applications Overview >>> Software & Updates >>> Additional Drivers >>> Install/Apply changes
+
+* 
