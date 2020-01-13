@@ -35,7 +35,7 @@ sudo apt install libavcodec-extra
 ```
 sudo apt install libdvd-pkg
 ```
-23. System Cleanup
+* System Cleanup
 you can do it in many ways.
 
 You can clean partial packages using a command
