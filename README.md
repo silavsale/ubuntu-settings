@@ -17,7 +17,8 @@ sudo apt-get install gnome-tweak-tool
   ``` sudo dpkg -i google-chrome-stable_current_amd64.deb ```
 
 * Check for Update and Upgrade
-``` sudo apt update
+``` 
+sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade 
 ```
