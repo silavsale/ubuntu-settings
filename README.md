@@ -25,4 +25,28 @@ sudo apt dist-upgrade
 * Install Latest Graphics Drivers
 Applications Overview >>> Software & Updates >>> Additional Drivers >>> Install/Apply changes
 
-* 
+* Third-party Media Codecs & Extras
+```
+sudo apt install ubuntu-restricted-extras
+```
+```
+sudo apt install libavcodec-extra
+```
+```
+sudo apt install libdvd-pkg
+```
+23. System Cleanup
+you can do it in many ways.
+
+You can clean partial packages using a command
+```
+sudo apt-get autoclean
+```
+You can auto cleanup apt-cache
+```
+sudo apt-get clean
+```
+You can clean up of any unused dependencies
+```
+sudo apt-get autoremove
+```
