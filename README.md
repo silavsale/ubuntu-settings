@@ -51,3 +51,8 @@ You can clean up of any unused dependencies
 ```
 sudo apt-get autoremove
 ```
+* Remouve firefoxsudo
+```
+apt-get purge firefox
+```
+
