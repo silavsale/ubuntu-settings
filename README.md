@@ -123,26 +123,21 @@ To check whether `mongodb` user/group exists or not, try:
     cut -d: -f1 /etc/passwd | grep mongo
     cut -d: -f1 /etc/group | grep mongo
 ***
-### mongodb
-
-Here I will show you how to install MongoDB compass in ubuntu.
-
-Step 1: Update your operating system.
-```
-apt-get update
-```
-Step 2: Download MongoDB compass
-```
-wget https://downloads.mongodb.com/compass/mongodb-compass_1.15.1_amd64.deb
-```
-Step 3: install the compass
-```
-sudo dpkg -i mongodb-compass_1.15.1_amd64.deb
+### install mongodb
 ```
 sudo apt-get install mongodb
 sudo apt-get update
 sudo service mongodb start
 mongo
+```
+* to see db run 
+```
+db
+```
+&
+```
+show dbs
+```
 
 ### user error while installing mongo db fixed 
 enter this code 
