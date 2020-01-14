@@ -2,12 +2,12 @@
 ---
 ## My notes about Ubuntu settings and applications installation.
 
-* install **GNOME tweaks** from Ubuntu Software center or
+# install **GNOME tweaks** from Ubuntu Software center or
 from terminal. 
 ```
 sudo apt-get install gnome-tweak-tool
 ```
-* install **Coogle Chrome** from cli 
+# install **Coogle Chrome** from cli 
 1. download  
 
 ``` wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb ```  
@@ -16,14 +16,14 @@ sudo apt-get install gnome-tweak-tool
   
   ``` sudo dpkg -i google-chrome-stable_current_amd64.deb ```
 
-* Check for Update and Upgrade
+# Check for Update and Upgrade
 ``` 
 sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade 
 ```
 
-* Install Latest Graphics Drivers
+# Install Latest Graphics Drivers
 Applications Overview >>> Software & Updates >>> Additional Drivers >>> Install/Apply changes
 
 * Third-party Media Codecs & Extras
@@ -36,7 +36,7 @@ sudo apt install libavcodec-extra
 ```
 sudo apt install libdvd-pkg
 ```
-* System Cleanup
+# System Cleanup
 you can do it in many ways.
 
 You can clean partial packages using a command
@@ -51,13 +51,13 @@ You can clean up of any unused dependencies
 ```
 sudo apt-get autoremove
 ```
-* openweather  form ubuntu software center > add-on
+# Install openweather  form ubuntu software center > add-on
 
-* Remove firefoxsudo
+# Remove firefoxsudo
 ```
 apt-get purge firefox
 ```
-* Remove 
+# Remove thunderbird
 ```
 sudo apt-get purge thunderbird*
 ```
@@ -77,15 +77,10 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 ```
 sudo apt install code
 ```
-* mongodb
-Here I will show you how to install MongoDB compass in ubuntu.
 
-Step 1: Update your operating system.
-```
-apt-get update
-```
+***
 
-* remove
+# remove mongodb 
 In my case `mongodb` packages are named `mongodb-org` and `mongodb-org-*`
 
 So when I type `sudo apt purge mongo` then `tab` (for auto-completion) I can see all installed packages that start with `mongo`.
@@ -128,7 +123,14 @@ To check whether `mongodb` user/group exists or not, try:
     cut -d: -f1 /etc/passwd | grep mongo
     cut -d: -f1 /etc/group | grep mongo
 ***
+# mongodb
 
+Here I will show you how to install MongoDB compass in ubuntu.
+
+Step 1: Update your operating system.
+```
+apt-get update
+```
 Step 2: Download MongoDB compass
 ```
 wget https://downloads.mongodb.com/compass/mongodb-compass_1.15.1_amd64.deb
