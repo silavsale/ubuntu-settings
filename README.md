@@ -143,3 +143,11 @@ sudo apt-get install mongodb
 sudo apt-get update
 sudo service mongodb start
 mongo
+
+### user error while installing mongo db fixed 
+enter this code 
+```
+sudo nano /var/lib/dpkg/statoverride
+```
+then remove existing user.
+
