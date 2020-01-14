@@ -51,6 +51,8 @@ You can clean up of any unused dependencies
 ```
 sudo apt-get autoremove
 ```
+* openweather  form ubuntu software center > add-on
+
 * Remove firefoxsudo
 ```
 apt-get purge firefox
@@ -74,4 +76,19 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 ```
 ```
 sudo apt install code
+```
+* mongodb
+Here I will show you how to install MongoDB compass in ubuntu.
+
+Step 1: Update your operating system.
+```
+apt-get update
+```
+Step 2: Download MongoDB compass
+```
+wget https://downloads.mongodb.com/compass/mongodb-compass_1.15.1_amd64.deb
+```
+Step 3: install the compass
+```
+sudo dpkg -i mongodb-compass_1.15.1_amd64.deb
 ```
