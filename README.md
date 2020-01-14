@@ -1,5 +1,7 @@
 ### Hi everyone, this is my Ubuntu settings and app's to install guide.
 
+# I Welcome everybody to commit your's settings and apps to this repo.
+
 # Ubuntu Settings
 ---
 ## My notes about Ubuntu settings and applications installation.
