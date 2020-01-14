@@ -84,6 +84,51 @@ Step 1: Update your operating system.
 ```
 apt-get update
 ```
+
+* remove
+In my case `mongodb` packages are named `mongodb-org` and `mongodb-org-*`
+
+So when I type `sudo apt purge mongo` then `tab` (for auto-completion) I can see all installed packages that start with `mongo`.
+
+Another option is to run the following command (which will list all packages that contain `mongo` in their names or their descriptions):
+
+    dpkg -l | grep mongo
+
+In summary, I would do (to purge all packages that start with `mongo`):
+
+    sudo apt purge mongo*
+
+and then (to make sure that no mongo packages are left):
+
+    dpkg -l | grep mongo
+
+Of course, as mentioned by @alicanozkara, you will need to manually remove some directories like `/var/log/mongodb` and `/var/lib/mongodb`
+
+Running the following `find` commands:
+
+`sudo find /etc/ -name "*mongo*"` and `sudo find /var/ -name "*mongo*"`
+
+may also show some files that you may want to remove, like:
+
+    /etc/systemd/system/mongodb.service
+    /etc/apt/sources.list.d/mongodb-org-3.2.list
+
+and:
+
+    /var/lib/apt/lists/repo.mongodb.*
+
+
+You may also want to remove user and group `mongodb`, to do so you need to run:
+
+    sudo userdel -r mongodb
+    sudo groupdel mongodb
+
+To check whether `mongodb` user/group exists or not, try:
+
+    cut -d: -f1 /etc/passwd | grep mongo
+    cut -d: -f1 /etc/group | grep mongo
+***
+
 Step 2: Download MongoDB compass
 ```
 wget https://downloads.mongodb.com/compass/mongodb-compass_1.15.1_amd64.deb
@@ -92,3 +137,7 @@ Step 3: install the compass
 ```
 sudo dpkg -i mongodb-compass_1.15.1_amd64.deb
 ```
+sudo apt-get install mongodb
+sudo apt-get update
+sudo service mongodb start
+mongo
