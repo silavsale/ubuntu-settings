@@ -1,3 +1,5 @@
+### Hi everyone, this is my Ubuntu settings and app's to install guide.
+
 # Ubuntu Settings
 ---
 ## My notes about Ubuntu settings and applications installation.
