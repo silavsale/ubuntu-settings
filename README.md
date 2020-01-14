@@ -130,7 +130,7 @@ sudo apt-get update
 sudo service mongodb start
 mongo
 ```
-* to see db run 
+* to see db, run 
 ```
 db
 ```
@@ -146,3 +146,23 @@ sudo nano /var/lib/dpkg/statoverride
 ```
 then remove existing user.
 
+### donwload and install mongodb compass
+https://docs.mongodb.com/compass/master/install/
+https://www.mongodb.com/download-center/compass?jmp=docs
+
+Download Compass
+To download Compass, you can use your preferred web browser.
+
+Open the downloads page.
+Download the latest version of MongoDB Compass for Ubuntu. The MongoDB Compass installer is a .deb package.
+Install Compass
+Double-click on the .deb package icon to start installation.
+
+Click Install.
+
+../_images/install-ubuntu.png
+Once installed, launch Compass from your Applications folder.
+
+Start Compass:
+
+mongodb-compass
