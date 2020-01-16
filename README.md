@@ -175,7 +175,22 @@ mongodb-compass
 ### Install Caffeine Indicator
 sudo add-apt-repository ppa:caffeine-developers/ppa
 After that, update package cache and install the indicator by running below two commands one by one:
-
+```
 sudo apt-get update
-
+```
+```
 sudo apt-get install caffeine
+```
+
+### Install Vim
+
+```
+sudo apt-get install vim
+```
+
+### Liferea
+```
+sudo add-apt-repository ppa:ubuntuhandbook1/apps
+$ sudo apt-get update
+$ sudo apt-get install liferea
+```
