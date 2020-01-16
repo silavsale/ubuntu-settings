@@ -171,3 +171,11 @@ Once installed, launch Compass from your Applications folder.
 ```
 mongodb-compass
 ```
+
+### Install Caffeine Indicator
+sudo add-apt-repository ppa:caffeine-developers/ppa
+After that, update package cache and install the indicator by running below two commands one by one:
+
+sudo apt-get update
+
+sudo apt-get install caffeine
