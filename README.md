@@ -193,16 +193,18 @@ sudo apt-get install caffeine
 sudo apt-get install vim
 ```
 
-### Liferea
+### Install Liferea
 ```
 sudo add-apt-repository ppa:ubuntuhandbook1/apps
 $ sudo apt-get update
 $ sudo apt-get install liferea
 ```
 
-### node 
+### Install node 
 
 ```
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+```
+```
 sudo apt install nodejs
 ```
