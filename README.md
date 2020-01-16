@@ -27,6 +27,11 @@ sudo apt upgrade
 sudo apt dist-upgrade 
 ```
 
+### Install curl
+```
+sudo apt install curl
+```
+
 ### Install Latest Graphics Drivers
 Applications Overview >>> Software & Updates >>> Additional Drivers >>> Install/Apply changes
 
@@ -193,4 +198,11 @@ sudo apt-get install vim
 sudo add-apt-repository ppa:ubuntuhandbook1/apps
 $ sudo apt-get update
 $ sudo apt-get install liferea
+```
+
+### node 
+
+```
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt install nodejs
 ```
